@@ -746,6 +746,10 @@ html[data-theme="light"] .search-panel {
   top: 2px;
 }
 
+.value-strip__track {
+  animation: marquee 14s linear infinite !important;
+}
+
 @keyframes marquee {
   from {
     transform: translateX(0);
