@@ -719,6 +719,7 @@ html[data-theme="light"] .search-panel {
 
 .value-strip__track {
   display: flex;
+  align-items: center;
   gap: 1rem;
   width: max-content;
   white-space: nowrap;
@@ -727,17 +728,22 @@ html[data-theme="light"] .search-panel {
 
 .value-strip__item {
   flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
   font-size: 0.95rem;
   font-weight: 600;
+  line-height: 1;
   color: var(--color-text);
 }
 
 .value-strip__divider {
+  flex: 0 0 auto;
   width: 6px;
   height: 6px;
   border-radius: 999px;
   background: var(--color-accent);
-  flex: 0 0 auto;
+  position: relative;
+  top: 2px;
 }
 
 @keyframes marquee {
@@ -763,6 +769,7 @@ html[data-theme="light"] .search-panel {
   .value-strip__divider {
     width: 8px;
     height: 8px;
+    top: 2px;
   }
 }
 
