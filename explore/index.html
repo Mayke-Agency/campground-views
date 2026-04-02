@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Explore Campgrounds | Campground Views</title>
+    <meta
+      name="description"
+      content="Search campgrounds by destination, stay type, amenities, and trip style. Compare campgrounds with visual previews and clear details."
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-logo" href="../" aria-label="Campground Views home">
+          <span class="site-logo__mark" aria-hidden="true">CV</span>
+          <span class="site-logo__text">Campground Views</span>
+        </a>
+
+        <button
+          class="mobile-nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label="Open menu"
+          data-mobile-nav-toggle
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav
+          class="site-nav"
+          id="mobile-nav"
+          aria-label="Primary"
+          data-mobile-nav
+        >
+          <ul class="site-nav__list">
+            <li><a href="../explore/" aria-current="page">Explore</a></li>
+            <li><a href="../campground/">Campground Tours</a></li>
+            <li><a href="../pro/">Campground Views Pro</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-header__actions">
+          <a class="button button--ghost" href="../login/">Log in</a>
+          <a class="button button--primary" href="../pro/">Go Pro</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section
+        class="page-hero page-hero--compact"
+        aria-labelledby="page-title"
+      >
+        <div class="page-hero__content">
+          <p class="eyebrow">Explore campgrounds</p>
+          <h1 id="page-title">Find a better place to camp</h1>
+          <p>
+            Search with more context, compare faster, and narrow in on the right
+            fit.
+          </p>
+        </div>
+      </section>
+
+      <button
+        class="filters-toggle button button--ghost"
+        type="button"
+        aria-expanded="false"
+        aria-controls="filters-panel"
+        data-filter-toggle
+      >
+        Filters
+      </button>
+
+      <section class="explore-layout" aria-label="Campground search results">
+        <aside
+          class="filters-panel"
+          id="filters-panel"
+          aria-labelledby="filters-title"
+        >
+          <div class="filters-panel__header">
+            <h2 id="filters-title">Filters</h2>
+            <button type="button">Reset</button>
+          </div>
+
+          <form action="../explore/" method="get">
+            <div class="form-group">
+              <label for="search-destination">Destination</label>
+              <input
+                id="search-destination"
+                name="destination"
+                type="text"
+                value="Wyoming"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="search-dates">Dates</label>
+              <input
+                id="search-dates"
+                name="dates"
+                type="text"
+                placeholder="Add dates"
+              />
+            </div>
+
+            <fieldset class="form-group">
+              <legend>Stay type</legend>
+              <label
+                ><input type="checkbox" name="stay-type" value="rv" /> RV</label
+              >
+              <label
+                ><input type="checkbox" name="stay-type" value="tent" />
+                Tent</label
+              >
+              <label
+                ><input type="checkbox" name="stay-type" value="cabin" />
+                Cabin</label
+              >
+              <label
+                ><input type="checkbox" name="stay-type" value="glamping" />
+                Glamping</label
+              >
+            </fieldset>
+
+            <fieldset class="form-group">
+              <legend>Amenities</legend>
+              <label
+                ><input type="checkbox" name="amenities" value="hookups" /> Full
+                Hookups</label
+              >
+              <label
+                ><input type="checkbox" name="amenities" value="pull-through" />
+                Pull Through</label
+              >
+              <label
+                ><input type="checkbox" name="amenities" value="pets" /> Pet
+                Friendly</label
+              >
+              <label
+                ><input type="checkbox" name="amenities" value="wifi" />
+                Wi-Fi</label
+              >
+            </fieldset>
+
+            <fieldset class="form-group">
+              <legend>Features</legend>
+              <label
+                ><input type="checkbox" name="features" value="tour" /> Virtual
+                Tour</label
+              >
+              <label
+                ><input type="checkbox" name="features" value="water" />
+                Waterfront</label
+              >
+              <label
+                ><input type="checkbox" name="features" value="shade" /> Shaded
+                Sites</label
+              >
+            </fieldset>
+
+            <button class="button button--primary" type="submit">
+              Show results
+            </button>
+          </form>
+        </aside>
+
+        <div class="results-panel">
+          <div class="results-panel__toolbar">
+            <div>
+              <p class="results-count">
+                <strong>42 campgrounds</strong> near Wyoming
+              </p>
+            </div>
+
+            <div class="results-toolbar__actions">
+              <label for="sort-results">Sort by</label>
+              <select id="sort-results" name="sort">
+                <option value="recommended">Recommended</option>
+                <option value="distance">Distance</option>
+                <option value="popular">Most Popular</option>
+                <option value="recent">Recently Added</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="results-layout">
+            <div class="results-list">
+              <article class="result-card">
+                <div class="result-card__body">
+                  <a class="result-card__link" href="../campground/">
+                    <img
+                      src="../assets/images/result-1.jpg"
+                      alt="Mountain campground with RV sites and pine trees"
+                      width="760"
+                      height="520"
+                    />
+                    <div class="result-card__top">
+                      <p class="result-card__location">Jackson, Wyoming</p>
+                      <p class="result-card__badge">Virtual Tour</p>
+                    </div>
+
+                    <h2>Snake River Campground</h2>
+
+                    <p class="result-card__summary">
+                      Spacious RV and tent sites with river access, mountain
+                      views, and easy park access.
+                    </p>
+
+                    <ul
+                      class="result-card__meta"
+                      aria-label="Campground details"
+                    >
+                      <li>RV & Tent</li>
+                      <li>Full Hookups</li>
+                      <li>Pet Friendly</li>
+                      <li>Pull Through</li>
+                    </ul>
+                  </a>
+
+                  <button
+                    class="save-button"
+                    type="button"
+                    aria-pressed="false"
+                    data-save-button
+                  >
+                    Save
+                  </button>
+                </div>
+              </article>
+
+              <article class="result-card">
+                <div class="result-card__body">
+                  <a class="result-card__link" href="../campground/">
+                    <img
+                      src="../assets/images/result-2.jpg"
+                      alt="Lakeside campground with tent sites and wooded surroundings"
+                      width="760"
+                      height="520"
+                    />
+                    <div class="result-card__top">
+                      <p class="result-card__location">Cody, Wyoming</p>
+                      <p class="result-card__badge">Family Favorite</p>
+                    </div>
+
+                    <h2>Buffalo Ridge Camp</h2>
+
+                    <p class="result-card__summary">
+                      A quieter campground with shaded sites, lake access, and a
+                      more relaxed pace.
+                    </p>
+
+                    <ul
+                      class="result-card__meta"
+                      aria-label="Campground details"
+                    >
+                      <li>Tent & Cabin</li>
+                      <li>Lake Access</li>
+                      <li>Shaded Sites</li>
+                      <li>Good for Families</li>
+                    </ul>
+                  </a>
+
+                  <button
+                    class="save-button"
+                    type="button"
+                    aria-pressed="false"
+                    data-save-button
+                  >
+                    Save
+                  </button>
+                </div>
+              </article>
+
+              <article class="result-card">
+                <div class="result-card__body">
+                  <a class="result-card__link" href="../campground/">
+                    <img
+                      src="../assets/images/result-3.jpg"
+                      alt="Open RV campground near a canyon with sunset light"
+                      width="760"
+                      height="520"
+                    />
+                    <div class="result-card__top">
+                      <p class="result-card__location">Lander, Wyoming</p>
+                      <p class="result-card__badge">Big Rig Friendly</p>
+                    </div>
+
+                    <h2>Frontier Canyon RV Park</h2>
+
+                    <p class="result-card__summary">
+                      Clean, easy-access RV camping with scenic views and
+                      reliable site spacing.
+                    </p>
+
+                    <ul
+                      class="result-card__meta"
+                      aria-label="Campground details"
+                    >
+                      <li>RV Only</li>
+                      <li>Big Rig Friendly</li>
+                      <li>Full Hookups</li>
+                      <li>Open Views</li>
+                    </ul>
+                  </a>
+
+                  <button
+                    class="save-button"
+                    type="button"
+                    aria-pressed="false"
+                    data-save-button
+                  >
+                    Save
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <aside class="results-map" aria-label="Map of campgrounds">
+              <img
+                src="../assets/images/map-results.jpg"
+                alt="Regional map with campground pins and a highlighted selected campground"
+                width="900"
+                height="1200"
+              />
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <a class="site-logo" href="../" aria-label="Campground Views home">
+            <span class="site-logo__mark" aria-hidden="true">CV</span>
+            <span class="site-logo__text">Campground Views</span>
+          </a>
+          <p>The smartest way to choose where you camp.</p>
+          <p>&copy; <span data-current-year></span> Campground Views</p>
+        </div>
+
+        <nav class="site-footer__nav" aria-label="Footer">
+          <div>
+            <h2>Explore</h2>
+            <ul>
+              <li><a href="../explore/">Find Campgrounds</a></li>
+              <li><a href="../campground/">Campground Tours</a></li>
+              <li><a href="../pro/">Campground Views Pro</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Company</h2>
+            <ul>
+              <li><a href="../about/">About</a></li>
+              <li><a href="../contact/">Contact</a></li>
+              <li><a href="../partners/">Partners</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Legal</h2>
+            <ul>
+              <li><a href="../privacy/">Privacy</a></li>
+              <li><a href="../terms/">Terms</a></li>
+              <li><a href="../accessibility/">Accessibility</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

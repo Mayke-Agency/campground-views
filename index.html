@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Campground Views | The Smartest Way to Choose Where You Camp</title>
+    <meta
+      name="description"
+      content="Find campgrounds with confidence. Explore immersive campground previews, compare amenities, and plan smarter camping trips with Campground Views."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#111513" />
+    <meta
+      property="og:title"
+      content="Campground Views | The Smartest Way to Choose Where You Camp"
+    />
+    <meta
+      property="og:description"
+      content="Explore campgrounds before you go. Search, preview, and compare better camping stays."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/og-home.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Campground Views | The Smartest Way to Choose Where You Camp"
+    />
+    <meta
+      name="twitter:description"
+      content="Search, preview, and compare campgrounds with confidence."
+    />
+    <meta name="twitter:image" content="assets/images/og-home.jpg" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="site-header__inner">
+        <a class="site-logo" href="#top" aria-label="Campground Views home">
+          <img
+            src="assets/images/campground-logo.svg"
+            alt="Campground Views logo"
+            class="site-logo__image"
+            width="180"
+            height="56"
+          />
+        </a>
+
+        <nav
+          class="site-nav"
+          id="mobile-nav"
+          aria-label="Primary"
+          data-mobile-nav
+        >
+          <ul class="site-nav__list">
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#tours">Campground Tours</a></li>
+            <li><a href="#pro">Campground Views Pro</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li class="site-nav__mobile-auth">
+              <a href="javascript:void(0)" aria-disabled="true">Log in</a>
+            </li>
+            <li class="site-nav__mobile-cta">
+              <a class="button button--primary" href="#explore"
+                >Start exploring</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="site-header__actions">
+          <button
+            class="theme-toggle"
+            aria-label="Toggle color theme"
+            data-theme-toggle
+          >
+            <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+          </button>
+
+          <a
+            class="button button--ghost"
+            href="javascript:void(0)"
+            aria-disabled="true"
+          >
+            Log in
+          </a>
+
+          <a class="button button--primary" href="#explore">Start exploring</a>
+        </div>
+
+        <button
+          class="mobile-nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label="Open menu"
+          data-mobile-nav-toggle
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__media">
+          <img
+            src="assets/images/hero-campground.jpg"
+            alt="A scenic campground at sunrise with RV sites, trees, and mountain views"
+            width="1600"
+            height="900"
+          />
+        </div>
+
+        <div class="hero__content">
+          <p class="eyebrow">Plan smarter. Camp better.</p>
+          <h1 id="hero-title">The smartest way to choose where you camp</h1>
+          <p class="hero__text">
+            Search campgrounds, preview sites with immersive media, and compare
+            what matters before you book.
+          </p>
+
+          <form
+            class="search-panel search-panel--hero"
+            action="#explore"
+            method="get"
+            role="search"
+            aria-label="Search campgrounds"
+          >
+            <div class="search-panel__field">
+              <label for="destination">Destination</label>
+              <input
+                id="destination"
+                name="destination"
+                type="text"
+                placeholder="State, park, city, or campground"
+              />
+            </div>
+
+            <div class="search-panel__field">
+              <label for="dates">Dates</label>
+              <input
+                id="dates"
+                name="dates"
+                type="text"
+                placeholder="Add dates"
+              />
+            </div>
+
+            <div class="search-panel__field">
+              <label for="stay-type">Stay type</label>
+              <select id="stay-type" name="stay-type">
+                <option value="">All stays</option>
+                <option value="rv">RV</option>
+                <option value="tent">Tent</option>
+                <option value="cabin">Cabin</option>
+                <option value="glamping">Glamping</option>
+              </select>
+            </div>
+
+            <div class="search-panel__action">
+              <button class="button button--primary" type="submit">
+                Find campgrounds
+              </button>
+            </div>
+          </form>
+
+          <ul class="hero__proof" aria-label="Key benefits">
+            <li>Virtual tours</li>
+            <li>Verified details</li>
+            <li>Built for campers</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="value-strip" aria-label="Highlights">
+        <div class="value-strip__viewport">
+          <div class="value-strip__track">
+            <span class="value-strip__item">Explore before you arrive</span>
+            <span class="value-strip__divider" aria-hidden="true"></span>
+            <span class="value-strip__item">Search for how you camp</span>
+            <span class="value-strip__divider" aria-hidden="true"></span>
+            <span class="value-strip__item">Plan from your phone</span>
+            <span class="value-strip__divider" aria-hidden="true"></span>
+            <span class="value-strip__item">Virtual tours</span>
+            <span class="value-strip__divider" aria-hidden="true"></span>
+            <span class="value-strip__item">Verified details</span>
+            <span class="value-strip__divider" aria-hidden="true"></span>
+            <span class="value-strip__item">Built for campers</span>
+
+            <span class="value-strip__item" aria-hidden="true"
+              >Explore before you arrive</span
+            >
+            <span class="value-strip__divider" aria-hidden="true"></span>
+            <span class="value-strip__item" aria-hidden="true"
+              >Search for how you camp</span
+            >
+            <span class="value-strip__divider" aria-hidden="true"></span>
+            <span class="value-strip__item" aria-hidden="true"
+              >Plan from your phone</span
+            >
+            <span class="value-strip__divider" aria-hidden="true"></span>
+            <span class="value-strip__item" aria-hidden="true"
+              >Virtual tours</span
+            >
+            <span class="value-strip__divider" aria-hidden="true"></span>
+            <span class="value-strip__item" aria-hidden="true"
+              >Verified details</span
+            >
+            <span class="value-strip__divider" aria-hidden="true"></span>
+            <span class="value-strip__item" aria-hidden="true"
+              >Built for campers</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="map-preview"
+        id="explore"
+        aria-labelledby="map-preview-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Explore the platform</p>
+          <h2 id="map-preview-title">A better way to find campgrounds</h2>
+          <p>
+            Search visually, compare quickly, and get a clearer picture of each
+            place.
+          </p>
+        </div>
+
+        <div class="map-preview__layout">
+          <div class="map-preview__panel" aria-label="Search preview">
+            <div class="filter-row" aria-label="Popular filters">
+              <button type="button">RV Friendly</button>
+              <button type="button">Full Hookups</button>
+              <button type="button">Pull Through</button>
+              <button type="button">Pet Friendly</button>
+            </div>
+
+            <div class="camp-list">
+              <article class="camp-card">
+                <a
+                  class="camp-card__link"
+                  href="javascript:void(0)"
+                  aria-disabled="true"
+                >
+                  <img
+                    src="assets/images/camp-1.jpg"
+                    alt="Riverfront RV campground with trees and wide gravel pads"
+                    width="640"
+                    height="420"
+                  />
+                  <div class="camp-card__body">
+                    <p class="camp-card__location">Jackson, Wyoming</p>
+                    <h3>Snake River Campground</h3>
+                    <ul class="camp-card__meta" aria-label="Campground details">
+                      <li>RV & Tent</li>
+                      <li>Virtual Tour</li>
+                      <li>Full Hookups</li>
+                    </ul>
+                  </div>
+                </a>
+                <button
+                  class="save-button"
+                  type="button"
+                  aria-pressed="false"
+                  data-save-button
+                >
+                  Save
+                </button>
+              </article>
+
+              <article class="camp-card">
+                <a
+                  class="camp-card__link"
+                  href="javascript:void(0)"
+                  aria-disabled="true"
+                >
+                  <img
+                    src="assets/images/camp-2.jpg"
+                    alt="Wooded campground with tent sites near a lake"
+                    width="640"
+                    height="420"
+                  />
+                  <div class="camp-card__body">
+                    <p class="camp-card__location">McCall, Idaho</p>
+                    <h3>Ponderosa Lake Camp</h3>
+                    <ul class="camp-card__meta" aria-label="Campground details">
+                      <li>Tent & Cabin</li>
+                      <li>Lake Access</li>
+                      <li>Family Friendly</li>
+                    </ul>
+                  </div>
+                </a>
+                <button
+                  class="save-button"
+                  type="button"
+                  aria-pressed="false"
+                  data-save-button
+                >
+                  Save
+                </button>
+              </article>
+
+              <article class="camp-card">
+                <a
+                  class="camp-card__link"
+                  href="javascript:void(0)"
+                  aria-disabled="true"
+                >
+                  <img
+                    src="assets/images/camp-3.jpg"
+                    alt="Desert campground with mountain views and spacious RV sites"
+                    width="640"
+                    height="420"
+                  />
+                  <div class="camp-card__body">
+                    <p class="camp-card__location">Moab, Utah</p>
+                    <h3>Red Mesa Basecamp</h3>
+                    <ul class="camp-card__meta" aria-label="Campground details">
+                      <li>RV Only</li>
+                      <li>Big Rig Friendly</li>
+                      <li>Scenic Views</li>
+                    </ul>
+                  </div>
+                </a>
+                <button
+                  class="save-button"
+                  type="button"
+                  aria-pressed="false"
+                  data-save-button
+                >
+                  Save
+                </button>
+              </article>
+            </div>
+          </div>
+
+          <div class="map-preview__map" aria-label="Map preview">
+            <div class="map-preview__inner">
+              <img
+                src="assets/images/map-preview.png"
+                alt="Map preview showing campground locations across a region"
+                width="900"
+                height="900"
+              />
+              <button class="map-overlay-button" type="button">
+                Open full map
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-grid" aria-labelledby="feature-grid-title">
+        <div class="section-heading">
+          <p class="eyebrow">Why campers use it</p>
+          <h2 id="feature-grid-title">Built to make choosing easier</h2>
+        </div>
+
+        <div class="feature-grid__items">
+          <article class="feature-card">
+            <h3>Virtual campground tours</h3>
+            <p>
+              Get a feel for roads, site spacing, trees, and terrain before you
+              pull in.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Better campground details</h3>
+            <p>
+              See the essentials clearly, from hookups and shade to site access
+              and layout.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Save and compare favorites</h3>
+            <p>
+              Keep your shortlist organized and revisit the best-fit campgrounds
+              later.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Plan with more confidence</h3>
+            <p>
+              Use visual context and useful filters instead of guessing from
+              limited listings.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="featured-camps"
+        id="tours"
+        aria-labelledby="featured-camps-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Featured stays</p>
+          <h2 id="featured-camps-title">Campgrounds worth a closer look</h2>
+        </div>
+
+        <div class="featured-camps__grid">
+          <article class="featured-card">
+            <a href="javascript:void(0)" aria-disabled="true">
+              <img
+                src="assets/images/featured-1.jpg"
+                alt="Premium RV park with paved sites and mountain scenery"
+                width="720"
+                height="480"
+              />
+              <div class="featured-card__body">
+                <p class="featured-card__location">Bozeman, Montana</p>
+                <h3>Bridger Valley RV Resort</h3>
+                <p>
+                  Spacious sites, mountain views, and strong amenities for
+                  longer stays.
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="featured-card">
+            <a href="javascript:void(0)" aria-disabled="true">
+              <img
+                src="assets/images/featured-2.jpg"
+                alt="Quiet forest campground with a creek and shaded tent sites"
+                width="720"
+                height="480"
+              />
+              <div class="featured-card__body">
+                <p class="featured-card__location">Bend, Oregon</p>
+                <h3>Whisper Creek Campground</h3>
+                <p>
+                  A peaceful forest setting with easy trail access and creekside
+                  sites.
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="featured-card">
+            <a href="javascript:void(0)" aria-disabled="true">
+              <img
+                src="assets/images/featured-3.jpg"
+                alt="Sunset over a campground near the desert with RV hookups"
+                width="720"
+                height="480"
+              />
+              <div class="featured-card__body">
+                <p class="featured-card__location">Sedona, Arizona</p>
+                <h3>Canyon Edge Camp</h3>
+                <p>
+                  Desert scenery, easy access, and a strong base for scenic day
+                  trips.
+                </p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="app-promo" id="pro" aria-labelledby="app-promo-title">
+        <div class="app-promo__content">
+          <p class="eyebrow">Take it on the road</p>
+          <h2 id="app-promo-title">
+            Campground planning that goes wherever you go
+          </h2>
+          <p>
+            Use Campground Views on mobile to search, save, and compare
+            campgrounds while you travel.
+          </p>
+          <div class="app-promo__actions">
+            <a class="button button--primary" href="#pro">Explore Pro</a>
+            <a
+              class="button button--ghost"
+              href="javascript:void(0)"
+              aria-disabled="true"
+              >View the app</a
+            >
+          </div>
+        </div>
+
+        <div class="app-promo__media">
+          <img
+            src="assets/images/app-preview-1.png"
+            alt="Campground Views app search screen"
+            width="600"
+            height="900"
+          />
+          <img
+            src="assets/images/app-preview-2.png"
+            alt="Campground Views app campground details screen"
+            width="600"
+            height="900"
+          />
+        </div>
+      </section>
+
+      <section class="story" id="story" aria-labelledby="story-title">
+        <div class="story__inner">
+          <p class="eyebrow">Built by campers</p>
+          <h2 id="story-title">A better way to choose where you camp</h2>
+
+          <p class="story__lead">
+            Too often, campers are stuck making a decision from a few photos and
+            a short list of amenities. That usually is not enough to know what a
+            place will really feel like once you arrive.
+          </p>
+
+          <div class="story__points">
+            <div class="story__point">
+              <h3>Made for real decisions</h3>
+              <p>
+                Campground Views was built for campers who want more than a
+                listing. It helps you get a better read on a place before you
+                commit.
+              </p>
+            </div>
+
+            <div class="story__point">
+              <h3>More useful than guesswork</h3>
+              <p>
+                With better visuals, practical details, and a more thoughtful
+                way to compare options, planning gets easier and the end result
+                gets better.
+              </p>
+            </div>
+          </div>
+
+          <div class="story__closing">
+            <p>Know more before you book.</p>
+            <a href="#explore" class="button button--primary story__cta"
+              >Start exploring</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <a class="site-logo" href="#top" aria-label="Campground Views home">
+            <img
+              src="assets/images/campground-logo.svg"
+              alt="Campground Views logo"
+              class="site-logo__image"
+              width="180"
+              height="56"
+            />
+          </a>
+          <p>The smartest way to choose where you camp.</p>
+          <p>&copy; <span data-current-year></span> Campground Views</p>
+        </div>
+
+        <nav class="site-footer__nav" aria-label="Footer">
+          <div>
+            <h2>Explore</h2>
+            <ul>
+              <li><a href="#explore">Find Campgrounds</a></li>
+              <li><a href="#tours">Campground Tours</a></li>
+              <li><a href="#pro">Campground Views Pro</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Company</h2>
+            <ul>
+              <li><a href="#story">About</a></li>
+              <li>
+                <a href="javascript:void(0)" aria-disabled="true">Contact</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" aria-disabled="true">Partners</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Legal</h2>
+            <ul>
+              <li>
+                <a href="javascript:void(0)" aria-disabled="true">Privacy</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" aria-disabled="true">Terms</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" aria-disabled="true"
+                  >Accessibility</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

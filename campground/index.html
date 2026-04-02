@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snake River Campground | Campground Views</title>
+    <meta
+      name="description"
+      content="Preview Snake River Campground with photos, a campground tour, key amenities, and planning details before you book."
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-logo" href="../" aria-label="Campground Views home">
+          <span class="site-logo__mark" aria-hidden="true">CV</span>
+          <span class="site-logo__text">Campground Views</span>
+        </a>
+
+        <button
+          class="mobile-nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label="Open menu"
+          data-mobile-nav-toggle
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav
+          class="site-nav"
+          id="mobile-nav"
+          aria-label="Primary"
+          data-mobile-nav
+        >
+          <ul class="site-nav__list">
+            <li><a href="../explore/">Explore</a></li>
+            <li>
+              <a href="../campground/" aria-current="page">Campground Tours</a>
+            </li>
+            <li><a href="../pro/">Campground Views Pro</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-header__actions">
+          <button
+            class="save-button"
+            type="button"
+            aria-pressed="false"
+            data-save-button
+          >
+            Save
+          </button>
+          <a class="button button--primary" href="../book/">Book now</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <article class="campground-page">
+        <!-- HERO -->
+        <header class="campground-hero">
+          <div class="campground-hero__media">
+            <img
+              src="../assets/images/campground-hero.jpg"
+              alt="Scenic campground with river and mountain views"
+              width="1600"
+              height="900"
+            />
+          </div>
+
+          <div class="campground-hero__content">
+            <p class="eyebrow">Campground tour</p>
+            <h1>Snake River Campground</h1>
+            <p class="campground-hero__location">Jackson, Wyoming</p>
+
+            <ul class="campground-hero__meta">
+              <li>RV & Tent</li>
+              <li>Full Hookups</li>
+              <li>Pet Friendly</li>
+              <li>River Access</li>
+            </ul>
+
+            <div class="campground-hero__actions">
+              <a class="button button--primary" href="#tour">Watch tour</a>
+              <a class="button button--ghost" href="#overview">View details</a>
+            </div>
+          </div>
+        </header>
+
+        <!-- MAIN LAYOUT -->
+        <div class="campground-layout">
+          <!-- LEFT CONTENT -->
+          <div class="campground-main">
+            <section id="overview">
+              <h2>Overview</h2>
+              <p>
+                Snake River Campground offers a mix of RV and tent sites in a
+                scenic setting with river access and mountain views.
+              </p>
+            </section>
+
+            <!-- VIDEO -->
+            <section id="tour">
+              <h2>Virtual campground tour</h2>
+              <div class="video-shell">
+                <video
+                  controls
+                  preload="metadata"
+                  poster="../assets/images/video-poster.jpg"
+                >
+                  <source
+                    src="../assets/video/campground-tour.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </section>
+
+            <!-- GALLERY -->
+            <section>
+              <h2>Photo gallery</h2>
+              <div class="gallery-grid">
+                <img src="../assets/images/gallery-1.jpg" alt="" />
+                <img src="../assets/images/gallery-2.jpg" alt="" />
+                <img src="../assets/images/gallery-3.jpg" alt="" />
+                <img src="../assets/images/gallery-4.jpg" alt="" />
+              </div>
+            </section>
+
+            <!-- HIGHLIGHTS -->
+            <section>
+              <h2>What stands out</h2>
+              <div class="highlights-grid">
+                <article>
+                  <h3>Easy arrival</h3>
+                  <p>Simple access and layout.</p>
+                </article>
+
+                <article>
+                  <h3>Scenic setting</h3>
+                  <p>Mountain and river views.</p>
+                </article>
+
+                <article>
+                  <h3>Balanced amenities</h3>
+                  <p>Comfort without losing the outdoors feel.</p>
+                </article>
+              </div>
+            </section>
+          </div>
+
+          <!-- RIGHT SIDEBAR -->
+          <aside class="campground-sidebar">
+            <section class="detail-card">
+              <h2>Quick details</h2>
+              <ul>
+                <li>RV, Tent</li>
+                <li>Full Hookups</li>
+                <li>Pet Friendly</li>
+                <li>Riverfront</li>
+              </ul>
+            </section>
+
+            <section class="detail-card">
+              <h2>Amenities</h2>
+              <ul class="tag-list">
+                <li>Hookups</li>
+                <li>WiFi</li>
+                <li>Showers</li>
+                <li>Pets</li>
+              </ul>
+            </section>
+
+            <section class="detail-card">
+              <h2>Plan your stay</h2>
+              <a class="button button--primary" href="../book/"
+                >Check availability</a
+              >
+              <button
+                class="save-button"
+                type="button"
+                aria-pressed="false"
+                data-save-button
+              >
+                Save
+              </button>
+            </section>
+
+            <section class="detail-card">
+              <h2>Map</h2>
+              <img src="../assets/images/map-single.jpg" alt="Campground map" />
+            </section>
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>&copy; <span data-current-year></span> Campground Views</p>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
